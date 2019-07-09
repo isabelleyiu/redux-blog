@@ -1,8 +1,8 @@
-export default (state = [], action) => {
+export default (posts = [], action) => {
   switch (action.type) {
     case 'FETCH_POSTS':
       return action.payload;
     default:
-      return state;
+      return posts;
   }
 }
